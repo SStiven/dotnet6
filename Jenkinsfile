@@ -4,7 +4,7 @@ node('DOTNET6') {
         extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/sstiven/dotnet6']]])
     }
     stage('Build'){
-        sh 'dotnet build .'
+        sh 'dotnet build ConsoleApp1'
     }
     stage('Test'){
         echo 'Execute unit test'
